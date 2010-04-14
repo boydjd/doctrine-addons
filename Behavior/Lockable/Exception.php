@@ -17,13 +17,13 @@
  */
 
 /**
- * Behavior_Lockable_Exception 
+ * Lockable_Exception 
  * 
  * @version $Id: Exception.php 3206 2010-04-13 23:48:46Z jboyd $
  * @copyright (c) Endeavor Systems, Inc. 2009 {@link http://www.endeavorsystems.com}
  * @author Josh Boyd <joshua.boyd@endeavorsystems.com> 
  * @license http://www.openfisma.org/content/license GPLv3
  */
-class Behavior_Lockable_Exception extends Fisma_Exception
+class Lockable_Exception extends Doctrine_Exception
 {
 }

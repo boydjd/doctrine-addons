@@ -20,14 +20,12 @@
  * Generic lockable behavior for records. Allows a record to be locked or unlocked.
  * Throws an exception if the record is modified while it is locked. 
  * 
- * @package Fisma
- * @subpackage Fisma_Behavior_Lockable
  * @version $Id: Lockable.php 3206 2010-04-13 23:48:46Z jboyd $
  * @copyright (c) Endeavor Systems, Inc. 2009 {@link http://www.endeavorsystems.com}
  * @author Josh Boyd <joshua.boyd@endeavorsystems.com> 
  * @license http://www.openfisma.org/content/license GPLv3
  */
-class Fisma_Behavior_Lockable extends Doctrine_Template
+class Behavior_Lockable extends Doctrine_Template
 {
     /**
      * Add isLocked column and add the listener
@@ -45,6 +43,6 @@ class Fisma_Behavior_Lockable extends Doctrine_Template
             )
         );
 
-        $this->addListener(new Fisma_Behavior_Lockable_Listener());
+        $this->addListener(new Behavior_Lockable_Listener());
     }
 }
